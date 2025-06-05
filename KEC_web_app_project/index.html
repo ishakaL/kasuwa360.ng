@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEC Makrket</title>
+    <link rel="stylesheet" href="style.css">
+    <link  href="https://cdn.jsdelivr.net/npm/bootsrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> KEC Online Market</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="product-details.html">Producks</a>
+            <a href="register.html">Register</a>
+            <a href="add-product.html">Admin Dashboard</a>
+            <a href="products_categories.html">Products categories</a>
+            <a href="profile.html">Profile</a>
+            <a href="vendors-dashboard.html">Dashboard</a>
+            <div class="Search-bar" style="display: flex; max-width: 600px; margin: 20px auto;">
+                <input type="text" id="SearchInput" placeholder="what are looking for" style="flex: 1; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px 0 0 5px;">
+                <button onclick="searchproducts()" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 0 5px 5px 0; font-size: 16px; cursor: pointer;">Search</button>
+            </div>
+
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Wecome to Kano Economic City Online Pharmaceutical Products Marketplace</h2>
+        <h4>The top-one market for medicine and health products</h4>
+        <p>Your top-one market for medicine and health products</p>
+        <img src="C:\Users\Ishaqa\Desktop\my products/kec-image2.jpg" width="1300" height="300" alt="products 1">
+    </section>
+    <section class="about us">
+        <div class="cotainer">
+            <p>Kano Economic City (KEC) stands as a mordern hub for commerce,innovation and customers converniece. Our e-commerce platform brings this innovation to your fingertips-offering <strong>fast, secure and efficient access to medicine and pharmaceutical products  </strong>directly from the comfort of your home</p>
+            <p>Whether you're in kano or anywhere in nigeria and others countries in africa, Our online pharmaceutical products makes it easer than ever to:</p>
+            <ul>
+                <li>Search and purchase verified medical products of your choices </li>
+                <li>Access trusted pharmacies across KEC</li>
+                <li>Get doorstep delivery with real-time tracking</li>
+                <li>Enjoy safe and encrypted payment option</li>
+            </ul>
+            <p>Our platform is designed with <stron>user efficiency and heath accessibility</stron>at its core. with just a few clicks, you can manage prescriptions, explore heath products and connected with certified vendors - all within a trusted digital environment powered by KEC's growing infrastructure<strong>Order smart, Order safe. Order from KEC</strong></p>
+        </div>
+    </section>
+    <section calss="featured-products">
+        <h2>featured products</h2>
+        <div clss="products-card">
+            <img src="C:\Users\Ishaqa\Desktop\my products/IMG_20100101_182425_396.jpg" width="200" height="200" class="img-fluid" alt="" alt="products 1">
+            <h3 id="panadol">panadol extra 1</h3>
+            <p>NGN1800</p>
+            <p>Effective pain reliep tablets</p>
+            <button class="btn btn-primary"><a href="product-details.html" class="btn btn-primary"></a>Buy Now</button>
+        </div>
+        <div clss="products-card">
+            <img src="C:\Users\Ishaqa\Desktop\my products/kec-image2.jpg" width="200" height="200" alt="products 1">
+           <h3 id="Vitamin c">Vitamin C 2</h3>
+            <p>Boost your immune system.</p>
+            <button class="btn btn-primary"><a href="product-details.html?id=2" class="btn btn-primary"></a>Buy Now</button>
+            
+        </div>
+    </div>
+    <div clss="products-card">
+        <img src="C:\Users\Ishaqa\Desktop\my products/IMG_20100101_193313_654.jpg" width="200" height="200" alt="products 1">
+       <h3>Vitamin C</h3>
+        <p>Boost your immune system.</p>
+        <button class="btn btn-primary"><a href="product-details.html" class="btn btn-primary"></a>Buy Now</button>
+    </div>
+</div>
+<div clss="products-card">
+    <img src="C:\Users\Ishaqa\Desktop\my products/IMG_20100101_182429_496.jpg" width="200" height="200" alt="products 1">
+   <h3>Vitamin C</h3>
+    <p>Boost your immune system.</p>
+    <button class="btn btn-primary"><a href="product-details.html" class="btn btn-primary"></a>Buy Now</button>
+</div>
+    </section>
+    <footer>
+        <p>&copy; 2025 KEC Market. All rights resrved</p>
+    </footer>
+    <script>
+    function searchProducts() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const filtered = products.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        p.description.toLowerCase().includes(query)
+      );
+      displayProducts(filtered);
+    }
+  </script>
+    
+</body>
+</html>
